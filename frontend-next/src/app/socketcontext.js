@@ -16,7 +16,7 @@ export const SocketProvider = ({ children }) => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const newSocket = io("http://localhost:8000"); // Connect to your backend
+    const newSocket = io("https://copypastewithsocket.onrender.com/"); // Connect to your backend
     setSocket(newSocket);
 
     // Cleanup when the component unmounts
