@@ -11,7 +11,7 @@ import { useSocket } from "../socketcontext";
 import { useRouter } from "next/navigation";
 import ProtectedRoute from "../ProtectedRoute";
 
-function connect() {
+function Connect() {
   const router = useRouter();
   const socket = useSocket();
   const [requestId, setRequestId] = useState("");
@@ -162,4 +162,4 @@ function connect() {
   );
 }
 
-export default connect;
+export default Connect;
